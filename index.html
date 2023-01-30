@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        * {
+           margin: 0;
+           padding: 0;
+      }
+        .container{
+            background-color: hsla(50, 33%, 25%, .75);
+            padding: 5rem 5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .image{
+            height: 30rem;
+            width: 90%;
+        }
+        .second-container{
+           position: relative;
+            color: white;
+        }
+        .bottom-left {
+  position: absolute;
+}
+.container1 {
+  position: relative;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+.container1:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: hsl(50, 33%, 25%);;
+  color: white;
+  font-size: 16px;
+  padding: 1px 1px;
+}
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="second-container">
+         <h1 class="bottom-left">Residential</h1>
+         <img class="image" src="/images/first.jpg" alt="">
+    </div>
+    <div class="second-container container1">
+         <img class="image image2" src="/images/second.jpg" alt="">
+         <div class="middle">
+            <div class="text">
+                <h1>Commercial</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                     nihil architecto laudantium tempore aliquam est esse cumque ex quaerat
+                      eos?</p>
+                      <h2>35845648956945</h2>
+            </div>
+          </div>
+    </div>
+     <div class="second-container">
+         <h1 class="bottom-left">Duplex</h1>
+        <img class="image" src="/images/third.jpg" alt="">
+     </div>
+   </div>
+</body>
+</html>
